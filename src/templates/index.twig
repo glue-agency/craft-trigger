@@ -2,7 +2,7 @@
 {% set title = "Trigger custom action"|t('triggeraction') %}
 
 {% block content %}
-
-    {{  craft.app.getModule('gactrigger').getSettings().triggers[0][0] }}
-
+    {% for key, trigger in craft.app.getModule('gactrigger').getSettings().triggers %}
+        <a href="{{ trigger[0] }}" target="_blank">{{ trigger[1] }}</a>
+    {% endfor %}
 {% endblock %}
