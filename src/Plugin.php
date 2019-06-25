@@ -44,7 +44,7 @@ class Plugin extends \craft\base\Plugin
 
     protected function settingsHtml()
     {
-        return \Craft::$app->getView()->renderTemplate('trigger/settings', [
+        return \Craft::$app->getView()->renderTemplate('gactrigger/settings', [
             'settings' => $this->getSettings()
         ]);
     }
