@@ -3,6 +3,7 @@
 
 {% block content %}
     {% for key, trigger in craft.app.getModule('gactrigger').getSettings().triggers %}
-        <a href="{{ trigger[0] }}" target="_blank">{{ trigger[1] }}</a>
+        <a href="{{ trigger[0] }}" target="_blank" class="btn submit">{{ trigger[1] }}</a>
     {% endfor %}
+    <a href="#" class="clear"></a>
 {% endblock %}
