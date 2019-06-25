@@ -3,6 +3,6 @@
 
 {% block content %}
 
-    {{  craft.app.getModule('gactrigger').getSettings().triggers }}
+    {{  craft.app.getModule('gactrigger').getSettings().triggers[0][0] }}
 
 {% endblock %}
