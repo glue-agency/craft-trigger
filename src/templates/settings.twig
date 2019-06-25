@@ -1,0 +1,19 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.editableTableField({
+    label: 'Triggers',
+    instructions: 'Add all triggers that should be displayed on the /admin/trigger page.',
+    id: 'triggerSetting',
+    name: 'triggerSetting',
+    cols: [
+    {
+        heading : 'Label',
+        type: 'singleline'
+    },
+    {
+        heading : 'Url',
+        type: 'singleline'
+    },
+    ],
+    rows: settings['triggers']
+}) }}

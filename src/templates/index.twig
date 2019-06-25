@@ -1,0 +1,8 @@
+{% extends "_layouts/cp" %}
+{% set title = "Trigger custom action"|t('triggeraction') %}
+
+{% block content %}
+
+    {{  craft.app.getModule('gactrigger').getSettings().triggers }}
+
+{% endblock %}
